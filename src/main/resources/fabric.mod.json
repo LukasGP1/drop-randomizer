@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "drop-randomizer",
+	"version": "${version}",
+	"name": "Drop Randomizer",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/drop-randomizer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"de.lulkas_.drop_randomizer.DropRandomizer"
+		],
+		"fabric-datagen": [
+			"de.lulkas_.drop_randomizer.DropRandomizerDataGenerator"
+		]
+	},
+	"mixins": [
+		"drop-randomizer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
